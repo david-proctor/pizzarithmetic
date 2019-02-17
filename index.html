@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+	<title>PIZZARITHMETIC DOT COM</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="pizzamath.js"></script>
+	<script src="https://api.html5media.info/1.1.6/html5media.min.js"></script>
+	<meta name="keywords" content="pizza, how many pizza, math, slice, small, medium, large, pizzarithmetic">
+	<meta name="description" content="How many pizza do I need? We will tell you. That is the only thing this site does".>
+</head>
+<body>
+
+<div id="container">
+	<div id="header">
+		<img src="banner.gif" alt="PIZZARITHMETIC!" title="PIZZARITHMETIC!" />
+	</div>
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html">Pizzarithmetic</a></li>
+			<li><a href="invest.html">Investment Opportunities</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="aboot.html">About</a></li>
+		</ul>
+	</div>
+	<div id="content">
+	
+		<h2>
+			Do some Pizzarithmetic&trade;
+		</h2>
+		
+		<center>
+		
+		<script type="text/javascript"> 
+			switch (Math.floor(Math.random() * (+7 - +1)) + +1) {
+				case 1:
+					document.write('<img src="images/breakingbadpizza.gif" alt="Walter would feel better if he ate that pizza" title="Walter would feel better if he ate that pizza" />');
+					break;
+				case 2:
+					document.write('<img src="images/homerpizza.gif" alt="I wish I could bury myself in pizza too" title="I wish I could bury myself in pizza too" />');
+					break;
+				case 3:
+					document.write('<img src="images/pizzadog.gif" alt="I would eat this dog" title="I would eat this dog" />');
+					break;
+				case 4:
+					document.write('<img src="images/pizzavinyl.gif" alt="This is not good for your pizza or your turntable" title="This is not good for your pizza or your turntable" />');
+					break;
+				case 5:
+					document.write('<img src="images/spacepizza.gif" alt="In space nobody can hear your stomach rumble. (for pizza)" title="In space nobody can hear your stomach rumble. (for pizza)" />');
+					break;
+				case 6:
+					document.write('<img src="images/arrestedpizza.gif" alt="pizza. the final fronteir" title="pizza. the final fronteir" />');
+					break;
+				case 7:
+					document.write('<img src="images/eternalpizza.gif" alt="I wish I knew how to bake a recursive pizza" title="I wish I knew how to bake a recursive pizza" />');
+					break;
+				default:
+					document.write('<img src="images/whoops.gif" alt="We done goofed. This number was generated: ' + number + '" title="We done goofed. This number was generated: ' + number + '" />');
+					break;
+			}
+		</script>
+		</center>
+		
+		<p>
+			Find out how much pizza you need the cheap and easy way - the PIZZARITHMETIC way!
+		</p>
+		
+		<form name="pizzamath">
+		
+			<p>
+				How many boys eating pizza?<br />
+				<input type="button" name="dp" value="+" onclick="mod(1, 1)" />
+				<span id="dudes">0</span>
+				<input type="button" name="dm" value="-" onclick="mod(1, -1)" />
+			</p>
+		
+			<p>
+				How many gilrs eat the pizza?<br />
+				<input type="button" name="cp" value="+" onclick="mod(2, 1)" />
+				<span id="ladies">0</span>
+				<input type="button" name="cm" value="-" onclick="mod(2, -1)" />
+			</p>
+			
+			<input type="button" name="go" value="Do that pizzarithmetic!" onclick="secret_algorithm()" />
+			<p id="output">Enter your pizza problem above!</p>
+		</form>
+
+	
+	</div>
+	<div id="footer">
+		<audio src="PizzaSong.ogg" controls preload autoplay></audio><br />
+		Putting the "pizza" in "pizza party" since November 26, 2013<br />
+	</div>
+</div>
+
+</body>
+</html>
